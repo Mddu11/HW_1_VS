@@ -1,0 +1,19 @@
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox'...
+...
+
+$ vagrant status
+default                   running (virtualbox)
+
+$ vagrant ssh
+Welcome to Ubuntu...
+
+$ systemctl status nginx
+● nginx.service - A high performance web server
+   Active: active (running)
+
+$ curl http://127.0.0.1:8080
+<html>
+<h1>Hello from Vagrant VM!</h1>
+...
+</html>
